@@ -1,0 +1,22 @@
+.sections {
+  padding-top: 5vh;
+}
+
+.sectionContainers {
+  position: relative;
+  overflow: hidden;
+  padding: 10vh;
+  background-color: white;
+  box-shadow: 2px 4px 6px 2px rgba(91, 75, 146, 0.25);
+  border-radius: 14px;
+}
+
+.sectionHeading {
+  color: #30627c;
+  font-weight: 800;
+}
+
+.sectionContent {
+  color: #b05e44;
+  font-weight: 800;
+}
