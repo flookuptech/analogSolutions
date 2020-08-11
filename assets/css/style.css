@@ -568,6 +568,47 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Purchase
+--------------------------------------------------------------*/
+.buyItem {
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  border-bottom: 3px solid #fff;
+}
+
+.buyItem:hover {
+  transform: translateY(-5px);
+  border-color: #ef7f4d;
+}
+
+h6.productName {
+  /* display: flex;
+  justify-content: left; */
+  text-align: left;
+  color: #30627c;
+  font-weight: 800;
+}
+
+h2.productAmount {
+  text-align: left;
+  color: #fb7454;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a.purchaseLink {
+  color: #5b4b92;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
@@ -903,7 +944,9 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .info i {
+.contact .address i,
+.contact .email i,
+.contact .phone i {
   font-size: 20px;
   color: #eb5d1e;
   float: left;
@@ -918,18 +961,11 @@ section {
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #7a6960;
+  padding: 5px 0 0 60px;
 }
 
 .contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #ab9d95;
+  padding: 0 0 0 60px;
 }
 
 .contact .info .email p {
