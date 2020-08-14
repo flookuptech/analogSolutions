@@ -38,6 +38,11 @@
 
 /* Our Clientele Section */
 
+.ourClienteleSection {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .clientContainer {
   position: relative;
   overflow: hidden;
@@ -173,5 +178,10 @@
   .purchaseTitle {
     font-size: 32px;
     margin-bottom: -2.5rem;
+  }
+
+  .contactUsContainer {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
