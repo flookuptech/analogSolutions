@@ -9,4 +9,13 @@
   font-size: 15px;
   color: #fb7454;
   opacity: 0.8;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .productAndServicesDescription {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 15px;
+  }
 }
