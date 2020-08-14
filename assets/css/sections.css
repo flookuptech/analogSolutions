@@ -1,5 +1,7 @@
 .sections {
   padding-top: 5vh;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .sectionContainers {
@@ -19,6 +21,13 @@
 .sectionContent {
   color: #b05e44;
   font-weight: 800;
+}
+
+/* About Us */
+
+.aboutUsTitle,
+.aboutUsContent {
+  text-align: right;
 }
 
 /* Products and Services */
@@ -100,14 +109,15 @@
 }
 
 .socialLinks a {
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  /* line-height: 1; */
+  /* padding: 1px 0; */
+  margin-top: -20px;
+  margin-right: 6px;
   font-size: 20px;
   color: #eb5d1e;
   float: right;
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   background: #fdf1ec;
   display: flex;
   justify-content: center;
@@ -119,4 +129,49 @@
 .socialLinks a:hover {
   background: #eb5d1e;
   color: #fff;
+}
+
+/*========================= FOR MOBILE DEVICES =========================*/
+
+@media (max-width: 768px) {
+  .sectionContainers {
+    padding-top: 0rem;
+  }
+
+  .sectionHeading {
+    font-size: 45px;
+  }
+
+  .aboutUsTitle {
+    text-align: left;
+  }
+
+  .sectionContent {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .homePageImage,
+  .aboutPageImage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+    padding-top: 1rem;
+  }
+
+  .tallyImageOne {
+    height: 6px;
+  }
+
+  .productsTitle {
+    font-size: 30px;
+  }
+
+  .purchaseTitle {
+    font-size: 32px;
+    margin-bottom: -2.5rem;
+  }
 }
