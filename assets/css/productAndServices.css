@@ -2,6 +2,8 @@
   color: #30627c;
   font-weight: 800;
   font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .productAndServicesDescription {
@@ -15,7 +17,7 @@
 @media (max-width: 768px) {
   .productAndServicesHeading {
     color: #30627c;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 15px;
   }
   .productAndServicesDescription {
