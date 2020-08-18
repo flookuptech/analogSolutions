@@ -97,8 +97,8 @@ h6,
 
 #header .logo img {
   padding: 0;
-  margin: 0;
-  max-height: 40px;
+  margin-top: -5px;
+  max-height: 55px;
 }
 
 #main {
@@ -136,7 +136,12 @@ h6,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
   color: #eb5d1e;
-  text-decoration: none;
+  /* text-decoration: none; */
+}
+
+.nav-menu ul li:active a {
+  background: #000;
+  color: #fff;
 }
 
 .nav-menu .get-started a {
@@ -391,29 +396,39 @@ h6,
   background: #ef7f4d;
 }
 
-#hero .animated {
+#home .animated,
+#aboutUs .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #home {
+    background-attachment: fixed;
+  }
+
+  #aboutUs {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 991px) {
-  #hero {
+  /* #home {
     height: calc(100vh - 72px);
-  }
-  #hero .animated {
+  } */
+  #home .animated {
     -webkit-animation: none;
     animation: none;
   }
-  #hero .hero-img {
+  #home .hero-img {
     text-align: center;
   }
-  #hero .hero-img img {
+  /* #home .hero-img img {
     width: 50%;
+  } */
+
+  #aboutUs .animated {
+    -webkit-animation: none;
+    animation: none;
   }
 }
 
@@ -427,15 +442,15 @@ h6,
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #hero .hero-img img {
+  /* #home .home-img img {
     width: 70%;
-  }
+  } */
 }
 
 @media (max-width: 575px) {
-  #hero .hero-img img {
+  /* #home .home-img img {
     width: 80%;
-  }
+  } */
 }
 
 @-webkit-keyframes up-down {
@@ -534,11 +549,11 @@ section {
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .about .about-img img {
     max-width: 90%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Services

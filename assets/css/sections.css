@@ -31,6 +31,7 @@
 .tallyImageTwo {
   height: 60px;
 }
+
 /* About Us */
 
 .aboutUsTitle,
@@ -47,9 +48,9 @@
 /* Our Clientele Section */
 
 .clientele-title h2 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   line-height: 1px;
   margin-bottom: 15px;
   color: #c2b7b1;
@@ -91,6 +92,10 @@
   vertical-align: middle;
   margin-right: 10px;
   padding-top: 10px;
+}
+
+.discounts {
+  text-align: center;
 }
 
 /* Contact Us Section */
@@ -154,9 +159,29 @@
   color: #fff;
 }
 
+.officeAddress a {
+  color: #e1885c;
+}
+
+.mapLocation a {
+  color: #30627c;
+}
+
+.officeAddress a:hover {
+  color: #30627c;
+}
+
+.mapLocation a:hover {
+  color: #b05e44;
+}
+
 /*========================= FOR MOBILE DEVICES =========================*/
 
 @media (max-width: 768px) {
+  /* .sections {
+    padding-top: 150px;
+  } */
+
   .sectionContainers {
     padding-top: 0rem;
   }
@@ -183,33 +208,49 @@
     margin-right: -3rem;
   }
 
-  .homePageImage,
+  .homePageImage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem;
+    margin-top: 1rem; */
+    margin-bottom: -3rem;
+    height: 200px;
+
+    /* padding-top: 1rem; */
+  }
+
   .aboutPageImage {
     display: flex;
     justify-content: center;
     align-content: center;
     padding-top: 1rem;
-    margin-top: -2rem;
-    margin-bottom: -6rem;
+    /* padding-bottom: 1rem;
+    margin-top: 1rem; */
+    margin-bottom: -3rem;
     height: 200px;
+
     /* padding-top: 1rem; */
   }
 
   .tallyImageOne {
-    display: block;
-    margin: 0 auto;
-    height: 60px;
+    display: none;
+    /* margin: 0 auto;
+    height: 60px; */
   }
 
   .tallyImageTwo {
     display: block;
     margin: 0 auto;
-    height: 55px;
-    padding-top: 1rem;
+    /* margin-left: -40px; */
+    height: 40px;
+    /* padding-top: 1rem; */
   }
 
   .productsTitle {
     font-size: 30px;
+    /* margin-top: -7rem; */
   }
 
   .clientele-title h2 {
@@ -218,18 +259,22 @@
     padding-bottom: 0;
     line-height: px;
     margin-bottom: 20px;
+
     color: #c2b7b1;
     text-align: center;
+    margin-top: -4rem;
   }
 
   .purchaseTitle {
     font-size: 28px;
     margin-bottom: -3rem;
+    margin-top: -3rem;
   }
 
   .contactUsContainer {
     padding-left: 30px;
     padding-right: 30px;
+    margin-top: -3rem;
   }
 
   .testimonialTitle {
